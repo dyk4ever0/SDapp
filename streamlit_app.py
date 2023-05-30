@@ -89,8 +89,8 @@ if __name__ == '__main__':
     # Create page layout
     with open('style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-    st.title('Image generator using Stable Diffusion')
-    st.caption('An app to generate images based on text prompts with a :blue[_Stable Diffusion_] model :sunglasses:')
+    st.title('Image generator - Stable Diffusion')
+    st.caption('An app to generate images based on text prompts with a :blue[_Stable Diffusion_] model')
     # Create a sidebar with text examples
     with st.sidebar:
         # Selectbox
@@ -98,16 +98,8 @@ if __name__ == '__main__':
         add_selectbox = st.sidebar.selectbox(
             "Prompt examples",
             (
-                "None",
-                "Van Gogh painting with squirrels eating nuts",
-                "Homer Simpson on a computer wearing a space suit",
-                "Mona Lisa with headphones on",
-                "A digital artwork of a roborovski hamster dressed in blue wizards clothing casting a thunderstorm with lightning",
-                "A model wearing a scuba diving suit",
-                "A looney tunes character driving a car",
-                "Optimus Prime on top of a surf board",
-                "Albert Einstein with a goofy smile",
-                "Nottingham Forest football team lifting the FA Cup"
+                "Style 1",
+                "Style 2",
             ), index=0)
         st.markdown('Use the above drop down box to generate _prompt_ examples')
         st.text('SD Streamlit app ver1')
